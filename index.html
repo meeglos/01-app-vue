@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>First VueJS App</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/my-style.css">
+        <script src="js/vue-v1.0.21.js"></script>
+    </head>
+    <body id="app">
+    	<h3 id="title">Bienvenido, {{ name }}</h3>
+		<input type="text" v-model="name" class="form-control">
+		<hr>
+		<div id="slider">
+			<ul class="my-list">
+				<li>Elemento 01</li>
+				<li>Elemento 02</li>
+				<li>Elemento 03</li>
+				<li>Elemento 04</li>
+				<li>Elemento 05</li>
+				<li>Elemento 06</li>
+			</ul>
+		</div>
+		
+		<pre>{{ $data | json }}</pre>
+
+
+		<script type="text/javascript">
+
+			new Vue({
+				el: "#app",
+				data: {
+					name: "Miglos"
+				}
+			});   	
+      
+		</script>
+    </body>
+</html>

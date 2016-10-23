@@ -1,0 +1,33 @@
+body {
+	background: #abb88e;
+	color: #333;
+	font-size: 16px;
+}
+
+#slider {
+	background: #bc1339;
+	width: 80%;
+	color: #ccf;
+	margin: 5% 0 10% 10%;
+	border-radius: 10px;
+	padding: 12px;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1em;
+}
+
+.my-list {
+	text-decoration: none;
+	list-style: none;
+	padding-left: 0;
+}
+.my-list li {
+	border: 1px dashed #abb88e;
+	margin-bottom: 1em;
+	margin-right: 0;
+	border-radius: 5px;
+	padding: 1em 0;
+}
+.my-list li:hover {
+	background: #ae323b;
+}
